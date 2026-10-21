@@ -9,7 +9,7 @@ y = data["category"]
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
-    test_size=0.75,
+    test_size=0.50,
     random_state=42,
     stratify=y,
 )
