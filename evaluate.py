@@ -1,5 +1,5 @@
 from sklearn.metrics import accuracy_score
-from uni_biagram import unigram_model
+from biagram_words import unigram_model
 from test_split import X_test,y_test
 import pandas as pd
 
@@ -18,5 +18,6 @@ results = pd.DataFrame({
 
 print("\nTest predictions:")
 print(results.to_string(index=False))
+
 
 

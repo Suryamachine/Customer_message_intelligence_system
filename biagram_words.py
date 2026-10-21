@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from test_split import X_train,y_train
 
 
-unigram_model = Pipeline([
+biagram_model = Pipeline([
     (
         "tfidf",
         TfidfVectorizer(
@@ -18,7 +18,7 @@ unigram_model = Pipeline([
     ),
 ])
 
-convert = unigram_model.fit(X_train, y_train)
+convert = biagram_model.fit(X_train, y_train)
 print(y_train)
 
 
