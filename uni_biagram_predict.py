@@ -3,12 +3,19 @@ from unigram_words import unigram_model
 from biagram_words import biagram_model
 
 new_messages = [
-    "Money disappeared from my card after checkout",
-    "I cannot get into my account",
-    "My parcel should have arrived yesterday",
-    "The app closes as soon as I open it",
-    "I need my money back",
-    "The sign in code is missing",
+    "I need a refund for this purchase",
+    "The invoice amount is incorrect",
+    "My card payment failed",
+    "Why did you charge me extra",
+    "I was billed for something I did not buy",
+    "The refund has not reached my account",
+    "My transaction was declined",
+    "The payment page charged me twice",
+    "I forgot my password",
+    "I cannot sign in to my account",
+    "My login is not working",
+    "The verification code never arrived",
+    "My account is locked",
 ]
 
 unigram_new = unigram_model.predict(new_messages)
